@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gamefy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="" id="logo"><span class="G">G</span>amefy</a>
+        <nav>
+            <!-- <span href="" id="navstat" id="logo"><span class="G">G</span>amefy</span> -->
+            <span href="" class="navstat"> Score: <span id="score">0</span> </span>
+            <span href="" class="navstat"> <span id="coinsIcon">co</span> Coins: <span id="coins">0</span></span>
+            <span class="navstat"> DimondClustur: <span id="dimond">0</span> </span>
+            <span href="" class="navstat">Rank: <span id="rank">1000</span></span>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <section id="game_section" >Games</section>
+        <div class="main_container">
+            <div class="game_box" id="game1">
+                <h2>Guess the Number</h2>
+            
+            </div>
+            <div class="game_box" id="game2">game2</div>
+            <div class="game_box"id="game3">game3</div>
+            <div class="game_box"id="game4">game4</div>
+        </div>
+        <div id="games_instruction">
+            <h2>Instructions:</h2>
+            <p>1)each win you got 10 coins</p>
+            <p>2)you got 1 DimondClustur on each 50 coins</p>
+            <p>3)your rank depend upon no of DimondClustur </p>
+            <p>4)if you click Gamefy logo then website will be close and your score not store here</p>
+        </div>
+        <div id="gameArea" >
+            <div  id="guess_the_number"  style="display:none;" >
+                <h1>Guess The Number</h1>
+                <p>guess the Number between 1 to 100 and got 10 gold coins</p>
+                <p>you have only 10 attempts and if you guess it in one attempts then you got 10 points</p> 
+                   <p> other wise reduece attempt points also reduce</p>
+                   <form class="form">
+                   <input type="text" id="input">
+                   <input type="submit" id="submitbtn" value="submit">
+                </form>
+                <div id="resParas">
+                   <p >previous Guesses: <span id="previousGuess"></span> </p>
+                   <p >attempts: <span id="attempts">10</span> </p>
+                   <p id="lowHi"></p>
+                   <button id="newgame">Start New Game</button>
+                   <br>
+                   <button id="back">Quit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><div>This page made by ARoy</div>
+        <div> Copyrigth@2024,all rights Resesved </div></footer>
+    <script src="script.js"></script>
+</body>
+</html>
